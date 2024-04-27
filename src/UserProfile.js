@@ -7,7 +7,7 @@ const UserProfile = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios('https://randomuser.me/api/?page=2&results=1&seed=abc');
+      const result = await axios('https://randomuser.me/api/?page=1&results=1&seed=abc');
       setUser(result.data.results[0]);
     };
 
