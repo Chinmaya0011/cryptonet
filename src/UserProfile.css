@@ -1,0 +1,51 @@
+.card {
+    background-image: linear-gradient(to right, 
+        rgba(190, 172, 172, 0.235), /* Red */
+        rgba(60, 180, 60, 0.434), /* Green */
+        rgba(92, 92, 198, 0.396) /* Blue */
+    );
+    transition: background-image 0.3s ease-in-out; /* Apply transition to background-image */
+}
+
+.card:hover {
+    background-image: linear-gradient(to right, 
+        rgba(92, 92, 198, 0.396), /* Blue */
+        rgba(56, 149, 56, 0.434), /* Green */
+        rgba(190, 172, 172, 0.235) /* Red */
+    );
+}
+
+.user {
+    position: relative;
+    perspective: 1500px;
+}
+
+.user:hover .imgdiv {
+    transform: rotateY(-10deg);
+}
+
+.imgdiv {
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.photo {
+    border-radius: 10px;
+}
+
+.details {
+    position: relative;
+    z-index: 1;
+}
+
+.name, .gender, .mobile {
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card:hover .name, .card:hover .gender, .card:hover .mobile {
+    color: rgb(224, 20, 122); /* Orange */
+}
