@@ -4,16 +4,17 @@
         rgba(60, 180, 60, 0.434), /* Green */
         rgba(92, 92, 198, 0.396) /* Blue */
     );
-    transition: background-image 0.3s ease-in-out; /* Apply transition to background-image */
+    transition: background-image 2s ease; /* Apply transition to background-image with a duration of 2 seconds */
 }
 
 .card:hover {
     background-image: linear-gradient(to right, 
         rgba(92, 92, 198, 0.396), /* Blue */
-        rgba(56, 149, 56, 0.434), /* Green */
+        rgba(60, 180, 60, 0.434), /* Green */
         rgba(190, 172, 172, 0.235) /* Red */
     );
 }
+
 
 .user {
     position: relative;

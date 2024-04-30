@@ -1,13 +1,16 @@
 // src/App.js
-import React from 'react';
+import React,{useState} from 'react';
 import './App.css';
 import UserProfile from './UserProfile';
-
+import Footer from './Footer';
 function App() {
+  const[count,setCount]=useState(1);
+  const value={count,setCount}
   return (
     <div className="App">
    
-      <UserProfile />
+      <UserProfile value={value}/>
+      <Footer value={value}/>
     </div>
   );
 }
