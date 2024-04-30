@@ -11,6 +11,7 @@ const UserProfile = ({ value }) => {
       const result = await axios(`https://randomuser.me/api/?page=${value.count}&results=1&seed=abc`);
       const newUser = result.data.results[0];
       setUsers(prevUsers => [newUser, ...prevUsers]); // Add new user to the beginning of the array
+   
     };
     fetchData();
   }, [value.count]);
